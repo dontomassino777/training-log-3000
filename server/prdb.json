@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "exercise": "Overhead Press",
+        "prNumber": 165,
+        "unit": "lbs"
+    },
+    {
+        "id": 2,
+        "exercise": "Back Lever",
+        "prNumber": 15,
+        "unit": "seconds"
+    }
+]

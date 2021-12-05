@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Training Log 3000</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">TRAINING LOG 3000</h1>
+    </header>
+    <span id="main-span">
+
+    
+        <div id="left-container">
+            
+            
+            <div class="form-div">
+                <h2>enter notes:</h2>
+                <form id="session-form">
+                    <label for="session-date"></label>
+                    <input type="date" id="session-date" name="session-date" value="" min="2021-11-01" max="2022-12-31"><br>
+                    <label for="session-log-input"></label>
+                    <textarea class="textarea" id="session-log-input" name="session-log-input" placeholder="log workout here!" rows="10" cols="33"></textarea><br>
+                    <label for="submit"></label>
+                    <input class="submit" type="submit" id="workout-finished-btn" name="submit" value="Save Workout!">
+                </form>
+            </div>
+
+            <h2>rest timer:</h2>
+
+            <label for="timer"></label>
+            <div class="timer"></div>
+            
+            <br>
+            <br>
+
+            <h2>past workouts:</h2>
+            
+            <div class="past-sessions-div">
+                <button id="past-sessions-btn">View/Edit</button>
+                <button id="hide-sessions-btn">Hide</button>
+                <div id="past-sessions-display">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="right-container">
+    
+            <div id="counter-div">
+                <h2>set counter:</h2>
+                <h1 id="count">0</h1>
+                
+                <div id="counter-button__wrapper"></div>
+                <button id="counter-button__decrease">-</button>
+                <button id="counter-button__increase">+</button>
+                <button id="counter-button__reset">RESET</button>
+            </div><br><br>
+
+            <div id="enter-pr-div">
+                <h2>enter new PR:</h2>
+                <form id="pr-form">
+                    <input type="text" id="pr-ex-input" placeholder="exercise name">
+                    <input type="text" id="pr-load-input" placeholder="PR (number)">
+                    <select id="pr-unit-input">
+                        <option value="lbs">lbs</option>
+                        <option value="kg">kg</option>
+                        <option value="seconds">seconds</option>
+                    </select>
+                    <input type="submit" id="pr-submit-btn" value="Record PR!">
+                </form>
+            </div><br><br>
+
+            <div id="pr-div">
+                <h2>past PRs</h2>
+                <div id="past-pr-div">
+                    <button id="past-pr-btn">View/Edit</button>
+                    <button id="hide-pr-btn">Hide</button>
+                    <div id="past-pr-display">
+    
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </span>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
